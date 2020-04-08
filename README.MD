@@ -10,12 +10,12 @@ Parsing the html-pages, extracting the fields of interest.
 2. Pack a web-application based on your implementation into a docker container, with a http rcp endpoint exposed: submitting an html page url to it, must return parsed values.
 
 
-##Docker guide
+## Docker guide
 1. Build the application (run gradle bootWar task)
 2. Put Dockerfile to same folder with generated .war file and open terminal there
 3. In the terminal:
 - docker build -f Dockerfile -t htmlparser .
 - docker run -p 8080:8080 -t htmlparser
 
-##Test url
+## Test url
 http://localhost:8080/amazon/general/02.html
